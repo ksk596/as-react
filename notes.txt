@@ -1,0 +1,28 @@
+Laying the foundation:
+----------------------
+start/build related script configured under scripts section of package.json.
+we can use npm run start or npm start to execute start script which we added under scripts.
+JSX is a javascrpt syntax which is easier to create react elements.
+React and JSX are different, we can write react without JSX, but JSX makes developing in react easy.
+JSX is not HTML inside JS. JSX is HTML/XML like syntax.
+Code is for humans first then machines.
+Creating element using JSX or using core React.createElement both are same.
+JS engine doesn't understand JSX unlike Javascript.
+JSX code will be transpiled before it reaches the JS Engine by Parcel, so that it can be understand by browser JS engine.
+Transpilation will be done by Babel which is part of Parcel. Babel is also a package written in JS.
+Babel's job is to convert JSX to react code which is understandble by JS engine.
+JSX => React.createElement => ReactElement-JS Object => HTMLElement(render) - done by Babel.
+Attributes in JSX should be given with camel case.
+Different tags and attributes in JSX.
+If we want to write JSX in multiple lines the code needs to be wrapped in ()
+For single line we can write with or without ().
+Everything in react is a component. there are two ways to create components.
+1. Class based component, 2. Functional component.
+Class based is a older way of writing components. Now most of projects written in Functional way.
+React functional component is a simple javascript function which can return jsx/react elements.
+React component can be rendered as root.render(<HeadingComponent /> unlike react element root.render(heading)
+Component composition is puttin/rendering one component in other component.
+We can use JS props inside other react component.
+Any type of composition works in react.
+JSX takes care of XSS attacks, even if someone try to attack it sanitizes the api/any data.
+<Title /> or <Title></Title> or {Title()} any one of these can be used to call react component.

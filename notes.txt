@@ -1,28 +1,20 @@
-Laying the foundation:
-----------------------
-start/build related script configured under scripts section of package.json.
-we can use npm run start or npm start to execute start script which we added under scripts.
-JSX is a javascrpt syntax which is easier to create react elements.
-React and JSX are different, we can write react without JSX, but JSX makes developing in react easy.
-JSX is not HTML inside JS. JSX is HTML/XML like syntax.
-Code is for humans first then machines.
-Creating element using JSX or using core React.createElement both are same.
-JS engine doesn't understand JSX unlike Javascript.
-JSX code will be transpiled before it reaches the JS Engine by Parcel, so that it can be understand by browser JS engine.
-Transpilation will be done by Babel which is part of Parcel. Babel is also a package written in JS.
-Babel's job is to convert JSX to react code which is understandble by JS engine.
-JSX => React.createElement => ReactElement-JS Object => HTMLElement(render) - done by Babel.
-Attributes in JSX should be given with camel case.
-Different tags and attributes in JSX.
-If we want to write JSX in multiple lines the code needs to be wrapped in ()
-For single line we can write with or without ().
-Everything in react is a component. there are two ways to create components.
-1. Class based component, 2. Functional component.
-Class based is a older way of writing components. Now most of projects written in Functional way.
-React functional component is a simple javascript function which can return jsx/react elements.
-React component can be rendered as root.render(<HeadingComponent /> unlike react element root.render(heading)
-Component composition is puttin/rendering one component in other component.
-We can use JS props inside other react component.
-Any type of composition works in react.
-JSX takes care of XSS attacks, even if someone try to attack it sanitizes the api/any data.
-<Title /> or <Title></Title> or {Title()} any one of these can be used to call react component.
+Talk is cheap, show me code:
+----------------------------
+Planning for food ordering app:
+Name an app - EatRight
+Header - have logo at left, links like home, about and cart in right side
+In Body - Search bar with search button.
+Restro cards for diff restaurents.
+One card can have color with image, title, rating, cuisines, price, promotions and other can have other customs
+Footer - copyrights, links.
+
+We can write inline styles in JSX as Javascript object.
+Props are just normal arguements to a function.
+Passing a prop to a component is like a passing an arguement to a function.
+When we want to pass data dynamically to component we use props.
+Config driven UI - Controlling how the UI looks by data/config, which is coming from backend.
+Each child in a list should have an unique key property - console warning while rendering list items.
+Whenever we are looping onto list we need to provide key which will work as unique id. here we will pass resto id as key.
+React doesn't know what are the new data added at start/inbetween if we don't provide keys so it will cleans the container and rerender all the data.
+If we provide the keys while looping, react reload only new data(optimization) which is added instead loading all.
+Few developers use index as keys. But React itself says we don't recommend using indexes for keys if the order of items may change. This can negatively impacts performance and may cause issues with component state.
